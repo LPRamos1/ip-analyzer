@@ -1,0 +1,9 @@
+[2026-03-09 10:15:32] INFO: User 'admin' logged in from 192.168.1.15
+[2026-03-09 10:20:45] WARNING: Failed login attempt from 142.250.217.142 (Connection timeout)
+[2026-03-09 10:25:12] ERROR: Database connection refused by 8.8.4.4
+[2026-03-09 10:30:00] INFO: Automatic update started for 192.168.1.15
+[2026-03-09 10:45:22] ALERT: High traffic detected from source 200.147.67.142
+[2026-03-09 11:00:05] DEBUG: Heartbeat sent to 8.8.8.8
+[2026-03-09 11:05:30] WARNING: Suspicious activity from 1.1.1.1 - repeated failures
+[2026-03-09 11:10:12] ERROR: Port scanning detected from 45.33.32.156
+[2026-03-09 11:15:00] INFO: Maintenance routine finished for 127.0.0.1

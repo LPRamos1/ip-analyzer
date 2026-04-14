@@ -1,0 +1,37 @@
+[
+    {
+        "location": "US",
+        "ip": "8.8.8.8",
+        "org": "Google DNS"
+    },
+    {
+        "location": "Austrália",
+        "ip": "1.1.1.1",
+        "org": "Cloudflare"
+    },
+    {
+        "location": "Japão",
+        "ip": "210.140.92.180",
+        "org": "Sakura Internet"
+    },
+    {
+        "location": "Alemanha",
+        "ip": "5.9.158.75",
+        "org": "Hetzner Online"
+    },
+    {
+        "location": "Brasil",
+        "ip": "200.147.67.142",
+        "org": "UOL"
+    },
+    {
+        "location": "South Africa",
+        "ip": "197.80.200.10",
+        "org": "MTN South Africa"
+    },
+    {
+        "location": "United Kingdom",
+        "ip": "212.58.244.70",
+        "org": "BBC News"
+    }
+]
