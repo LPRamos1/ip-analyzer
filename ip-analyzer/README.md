@@ -54,7 +54,8 @@ pytest .
 This project was built as part of CS50P to practice file processing, data validation, and working with external APIs in Python.
 ---
 
-📚 What I learned
+## 📚 What I learned
+
 - File parsing and data extraction techniques
 - Regular expressions for pattern matching
 - Working with external APIs in Python
