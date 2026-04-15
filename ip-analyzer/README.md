@@ -2,31 +2,40 @@
 #### Video Demo: <Link>
 
 ## 📌 Overview
-The **IP Analyzer** The IP Analyzer is a command-line tool that processes raw log files to extract, validate, and geolocate IPv4 addresses, producing structured and readable network reports.
+A command-line tool that extracts, validates, and enriches IPv4 addresses from log files using external geolocation data.
+---
 
-## 🛠️ Architecture Overview
+## 🚀 Features
 
-The project is structured into three main layers:
-- Input validation and file handling
-- IP extraction and normalization
-- API integration and result reporting
+- Extract IPv4 addresses from multiple file formats (.txt, .log, .csv, .json)
+- Validate IP addresses using custom rules
+- Fetch geolocation data using external API (batch requests)
+- Handle rate limits with controlled request batching
+- Display results in a formatted table
+---
 
-## 🚀 Key Features
+## 🛠️ Tech Stack
 
-- Multi-format file support (.txt, .log, .csv, .json)
-- IPv4 extraction using regex + custom validation
-- Batch geolocation via external API (up to 50 IPs per request)
-- Type-safe and modular Python design
-- Formatted terminal output using tabulate
+- Python 3.11
+- Requests
+- Regex
+- Tabulate
+---
 
-## ⚡ Setup
+## ⚙️ How it works
 
-Clone the repository and install dependencies:
+The tool reads a file, extracts potential IP addresses using regex, validates them, and sends them in batches to a geolocation API.
+
+Input file → Extraction → Validation → API enrichment → Output report
+
+---
+
+## 📦 Setup
 
 ```bash
 git clone https://github.com/LPRamos1/ip-analyzer.git
 pip install -r requirements.txt
-```
+
 
 ## ▶️ Run
 
@@ -40,16 +49,14 @@ python project.py logs/acess.log
 pytest .
 ```
 
-## 📂 File Structure
-- **project.py:** The main engine. Contains the orchestrator function (`ip_info`), extraction logic, and API communication layer.
-- **test_project.py:** A comprehensive test suite utilizing `pytest`, with advanced techniques like **monkeypatching** and **mocking** to simulate file systems and API responses.
-- **requirements.txt:** Lists the external dependencies (`requests`, `tabulate`) necessary for the project.
+🎯 Purpose
 
-## 🧠 Design Decisions
+This project was built as part of CS50P to practice file processing, data validation, and working with external APIs in Python.
+---
 
-- JSON files are normalized into strings to ensure consistent parsing across different structures.
-- API requests are batched to reduce external calls and improve performance.
-- Rate limiting is applied to comply with API constraints and avoid request failures.
-
-## 🎯 Motivation
-This project was built as part of CS50P to apply Python fundamentals in a real-world data processing problem involving file parsing, validation, and API integration.
+📚 What I learned
+- File parsing and data extraction techniques
+- Regular expressions for pattern matching
+- Working with external APIs in Python
+- Handling rate limits and batch processing
+- Structuring a CLI application
